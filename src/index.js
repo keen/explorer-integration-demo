@@ -1,12 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import Explorer from './Explorer';
 import reportWebVitals from './reportWebVitals';
+import config from './config';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Explorer config={config}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

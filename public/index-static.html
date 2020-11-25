@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Explorer</title>
+</head>
+<body>
+  <div id="root"></div>
+  <div id="modal-root"></div>
+  <script src="https://staging-static.keen.io/explorer/explorer.modern.min.js"></script>
+  <script>
+    new KeenExplorer({
+      container: '#root',
+      modalContainer: '#modal-root',
+      upgradeSubscriptionUrl: 'http://keen.io',
+      keenAnalysis: {
+        config = {
+          projectId: 'YOUR_PROJECT_ID',
+          masterKey: 'YOUR_MASTER_KEY',
+          readKey: 'YOUR_READ_KEY',
+          writeKey: 'YOUR_WRITE_KEY',
+        }
+      },
+    });
+  </script>
+</body>
+</html>

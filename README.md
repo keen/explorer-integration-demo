@@ -1,6 +1,17 @@
-# Getting Started with Create React App
+# Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This repository contains Explorer integration demo for static `public/index-static.html` and dynamic sites.
+At first you need to provide your project keys at `src/config.js`: 
+```
+const config = {
+  projectId: 'YOUR_PROJECT_ID',
+  masterKey: 'YOUR_MASTER_KEY',
+  readKey: 'YOUR_READ_KEY',
+  writeKey: 'YOUR_WRITE_KEY',
+};
+```
 
 ## Available Scripts
 
